@@ -5,15 +5,15 @@ Dado el siguiente diseño:
 
 ## 1º Maquetar usando HTML5 y SCSS como preprocesador de CSS. El diseño ha de ser aproximado no se va a valorar si el margen mide 8px en lugar de 5px si no que exista el margen // LISTO
 
-## 2º La Validación del formulario será obligatorio que ambos inputs estén cumplimentados, uno será tipo email con validación email y otro password cuya validación será que al menos deberá de tener 5 caracteres. El reminder del formulario, será un switch de tipo booleano y opcional.
+## 2º La Validación del formulario será obligatorio que ambos inputs estén cumplimentados, uno será tipo email con validación email y otro password cuya validación será que al menos deberá de tener 5 caracteres. El reminder del formulario, será un switch de tipo booleano y opcional. /// LISTO
 
-## 3º El botón de aceptar siempre estará activo pero al pulsarlo la primera vez si el formulario está mal cumplimentado se mostraran los mensajes de error, en caso de estar correctamente cumplimentados con poner un console.log(‘OK’) será suficiente
+## 3º El botón de aceptar siempre estará activo pero al pulsarlo la primera vez si el formulario está mal cumplimentado se mostraran los mensajes de error, en caso de estar correctamente cumplimentados con poner un console.log(‘OK’) será suficiente ///LISTO
 
-## 4º Para los iconos usar la librería que viene en Ionic o cualesquiera, el objetivo no es el diseño del icono si no su correcta maquetación.
+## 4º Para los iconos usar la librería que viene en Ionic o cualesquiera, el objetivo no es el diseño del icono si no su correcta maquetación./// LISTO
 
 ## 5º Realizar el diseño responsive  con el breakpoint en 960px.
 
-## 6º Se valorará positivamente la creatividad (por ejemplo añadir alguna animación)
+## 6º Se valorará positivamente la creatividad (por ejemplo añadir alguna animación) // LISTO
 
 ## 7º Test unitarios, E2E y componentes
 

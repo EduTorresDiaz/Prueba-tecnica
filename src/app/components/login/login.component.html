@@ -1,4 +1,3 @@
-<!--img class="background" src="assets/images/background.jpg" alt=""-->
 <div class="back">
     <section>
         <img class="logo" src="assets/images/logo.png" alt="Imagen gato">
@@ -8,20 +7,26 @@
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div class="form-group">
                 <img class="icon" src="assets/images/user.png" alt="Icono usuario">
-                <input type="email" class="form-control" id="email" formControlName="email" placeholder="Email">
+                <input type="email" class="form-control" id="email" formControlName="email" placeholder="Email" required>
+                <span *ngIf="this.form.get('email')?.errors?.['required']"></span>
+                <span *ngIf="this.form.get('email')?.errors?.['email']"></span>
             </div>
             <div class="form-group">
                 <img class="icon" src="assets/images/lock.png" alt="Icono candado">
-                <input type="password" class="form-control" id="password" formControlName="password" placeholder="Contraseña">
+                <input type="password" class="form-control" id="password" formControlName="password" placeholder="Contraseña" required>
+                <span *ngIf="this.form.get('password')?.errors?.['required']"></span>
+                <span *ngIf="this.form.get('password')?.errors?.['minlength']"></span>
+                
+
             </div>
             <div class="form-group__reminder">
                 <p>Recordar</p>
-                <mat-slide-toggle class="toggle" [color]="color"></mat-slide-toggle>
+                <mat-slide-toggle class="toggle"  [color]="color" [checked]="useDefault" (change)="toggle($event)"></mat-slide-toggle>
             </div>
             
-            <button type="submit" class="btn btn-primary">Acceder</button>
+            <button type="submit">Acceder</button>
+           
         </form>
-
 
     </section>
 </div>
