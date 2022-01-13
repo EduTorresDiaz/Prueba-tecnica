@@ -11,10 +11,11 @@ import Swal from 'sweetalert2';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  password: any;
+
   color: ThemePalette = 'primary';
   resultado!: any;
-  public useDefault = false;
+  useDefault = false;
+
 
   form = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -22,8 +23,7 @@ export class LoginComponent implements OnInit {
 
   });
 
-  public toggle(event: MatSlideToggleChange) {
-    console.log('toggle', event.checked);
+   toggle(event: MatSlideToggleChange) {
     this.useDefault = event.checked;
   }
 
@@ -36,6 +36,7 @@ export class LoginComponent implements OnInit {
         showConfirmButton: false,
         timer: 1500
       })
+
       if(this.useDefault === true){
         localStorage.setItem('email', this.form.value.email);
         localStorage.setItem('password', this.form.value.password);
@@ -50,15 +51,8 @@ export class LoginComponent implements OnInit {
     }
 
   }
-
-
-
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
-
-  
+  ngOnInit(): void {}
 
 }
