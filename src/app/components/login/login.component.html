@@ -1,0 +1,29 @@
+<!--img class="background" src="assets/images/background.jpg" alt=""-->
+<div class="back">
+    <section>
+        <img class="logo" src="assets/images/logo.png" alt="Imagen gato">
+
+        <h1>Prueba técnica</h1>
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <img class="icon" src="assets/images/user.png" alt="Icono usuario">
+                <input type="email" class="form-control" id="email" formControlName="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <img class="icon" src="assets/images/lock.png" alt="Icono candado">
+                <input type="password" class="form-control" id="password" formControlName="password" placeholder="Contraseña">
+            </div>
+            <div class="form-group__reminder">
+                <p>Recordar</p>
+                <mat-slide-toggle class="toggle" [color]="color"></mat-slide-toggle>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Acceder</button>
+        </form>
+
+
+    </section>
+</div>
+
+

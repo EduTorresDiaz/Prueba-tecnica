@@ -1,0 +1,104 @@
+.back {
+  background-image: url("../../../assets/images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 942px;
+  display: flex;
+}
+
+section {
+  margin: auto;
+  border: 1px solid #ccc;
+  width: 475px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 25px;
+}
+
+.logo {
+  width:180px;
+  height:180px;
+  margin-top: 25px;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 36px;
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: -40px;
+}
+
+.form-group {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 50px;
+  margin-right: 16px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: white;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.form-group__reminder {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 31px;
+}
+
+button {
+  width: 200px;
+  padding: 6px;
+  border-radius: 50px;
+  border: 3px solid rgb(103, 103, 245);
+  background: white;
+  margin: auto;
+  font-size: 22px;
+  font-family: "Nunito", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
