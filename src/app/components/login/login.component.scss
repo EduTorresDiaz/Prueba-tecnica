@@ -1,9 +1,10 @@
+$font: 'Nunito', sans-serif;
 .back {
   background-image: url("../../../assets/images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 942px;
+  height: 100vh;
   display: flex;
 }
 
@@ -11,7 +12,6 @@ section {
   margin: auto;
   border: 1px solid #ccc;
   width: 475px;
-  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@ section {
 }
 
 h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: $font;
   font-size: 36px;
   margin-top: 40px;
 }
@@ -59,7 +59,7 @@ input {
   outline: none;
   background: white;
   font-size: 18px;
-  font-family: 'Nunito', sans-serif;
+  font-family: $font;
 }
 
 .form-group__reminder {
@@ -70,7 +70,7 @@ input {
 
 p {
   font-size: 20px;
-  font-family: 'Nunito', sans-serif;
+  font-family: $font;
   margin-top: 31px;
 }
 
@@ -81,8 +81,9 @@ button {
   border: 3px solid rgb(103, 103, 245);
   background: white;
   margin: auto;
+  cursor: pointer;
   font-size: 22px;
-  font-family: "Nunito", sans-serif;
+  font-family: $font;
 }
 
 

@@ -27,6 +27,13 @@ export class LoginComponent implements OnInit {
     this.useDefault = event.checked;
   }
 
+  validateField(field: string, validator: string) {
+    const control = this.form.get(field);
+    if(control?.touched) {
+      return this.form.get(field)?.errors?.[validator];
+    }
+  }
+
   onSubmit() {
     if (this.form.valid) {
       this.resultado = Swal.fire({
