@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatSlideToggle, MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { By } from '@angular/platform-browser';
 import { LoginComponent } from './login.component';
-import {MatSlideToggleHarness} from '@angular/material/slide-toggle/testing';
+import { MatSlideToggleHarness } from '@angular/material/slide-toggle/testing';
 
 
 const res = {

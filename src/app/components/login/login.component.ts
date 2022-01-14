@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
         showConfirmButton: false,
         timer: 1500
       })
-
+      console.log('Ok');
       if(this.useDefault === true){
         localStorage.setItem('email', this.form.value.email);
         localStorage.setItem('password', this.form.value.password);
